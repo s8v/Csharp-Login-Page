@@ -1,0 +1,11 @@
+if (textBox1.Text == new WebClient().DownloadString("Enter Your Pastebin link with code here") || textBox1.Text == "yoursecretkey")
+            {
+                MessageBox.Show("Thank you for using This C# Login Page");
+                this.Hide();
+                main main = new main();
+                main.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Sorry the key is invalid. Try again.", "Key Invalid");
